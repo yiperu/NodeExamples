@@ -57,3 +57,4 @@ function handle_request(request, response){
 }
 
 http.createServer(handle_request).listen(port, '127.0.0.1');
+console.log('Empezando server http Node.js en http://127.0.0.1:'+ port);
