@@ -1,8 +1,8 @@
 var express = require('express');
 var app = express();
 
-app.get('/hola', function(request, response){
-	response.send('Hola ruta');
+app.get('/hola/:nombre', function(request, response){
+	response.send('Hola ' + request.params.nombre);
 });
 
 app.listen(3000);
